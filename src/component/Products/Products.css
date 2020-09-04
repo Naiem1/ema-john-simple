@@ -1,0 +1,21 @@
+.product {
+  display: flex;
+  margin: 10px 0;
+  padding: 20px 20px;
+  border-bottom: 1px solid lightgray;
+}
+
+.products-name {
+  margin: 0 20px;
+}
+
+.btn {
+  height: 30px;
+  width: 150px;
+  background: goldenrod;
+  border: 1px solid gray;
+  text-align: center;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
