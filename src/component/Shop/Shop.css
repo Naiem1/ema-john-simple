@@ -1,0 +1,14 @@
+.twin-container {
+  display: flex;
+  width: 100%;
+}
+
+.product-container {
+  border-right: 1px solid gray;
+  flex-basis: 70%;
+  margin: 0 10px;
+}
+
+.cart-container {
+ flex-basis: 30%;
+}
