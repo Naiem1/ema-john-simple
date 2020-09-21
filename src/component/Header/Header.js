@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.png';
 
 // Styling start
@@ -57,9 +58,9 @@ const Header = () => {
         <img style={img} src={logo} alt="" />
         <nav style={nav}>
           <ul style={ul}>
-            <li><a onMouseOver={addHover} onMouseOut={outHover} style={a} href="/shop">Shop</a></li>
-            <li><a onMouseOver={addHover} onMouseOut={outHover} style={a} href="/review">Order Review</a></li>
-            <li><a onMouseOver={addHover} onMouseOut={outHover} style={a} href="/inventory">Manage Inventory</a></li>
+            <Link to="/shop"><li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Shop</a></li></Link>
+            <Link to="/review"> <li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Order Review</a></li></Link>
+            <Link to="/inventory"><li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Manage Inventory</a></li></Link>
           </ul>
         </nav>
 

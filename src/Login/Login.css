@@ -1,0 +1,37 @@
+.login {
+  text-align: center;
+}
+
+.login__img img {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid gray;
+  margin: 20px 0;
+}
+
+
+
+.google__btn {
+  padding: 5px 30px;
+  background: goldenrod;
+  border: 1px solid gray;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 8px;
+}
+
+.success__message {
+  color: green;
+}
+.error__message {
+  color: red;
+}
+
+.google__btn {
+  background: orange;
+}
+
+.facebook__btn {
+  background: blue;
+}
