@@ -1,5 +1,6 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import { Link } from 'react-router-dom';
+import { UserContext } from '../../App';
 import logo from '../../images/logo.png';
 
 // Styling start
@@ -52,6 +53,7 @@ const outHover = (event) => {
 
 
 const Header = () => {
+  const [loggedInUser, setLoggedInUser] = useContext(UserContext);
   return (
     <div>
       <header style={header}>
@@ -61,6 +63,7 @@ const Header = () => {
             <Link to="/shop"><li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Shop</a></li></Link>
             <Link to="/review"> <li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Order Review</a></li></Link>
             <Link to="/inventory"><li><a onMouseOver={addHover} onMouseOut={outHover} style={a} >Manage Inventory</a></li></Link>
+            <button  onClick={() => setLoggedInUser({})}>Sign Out</button>
           </ul>
         </nav>
 
